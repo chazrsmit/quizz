@@ -3,7 +3,68 @@ body {
     overflow: hidden;
     margin: 0;
     height: 100vh;
+    /* prend toute la viewport */
   }
+  
+  .my-container {
+    width:600px;
+    height:400px;
+    background-color: #854DA7;
+    position: absolute; 
+    top:52%;
+    left:50%;
+    transform: translate(-50%, -50%); 
+    box-sizing: border-box;
+    z-index: 3;          /* higher than the matrix-container */
+    margin: 0 auto;      /* Center it horizontally */
+    /* margin-top: 250px;    Add some space from the top */
+    border-style: ridge;
+    border-color: #2F1539;
+    border-width: 20px;
+  }
+  
+  .container-score {
+    position: absolute; 
+    top:82%;
+    left:50%;
+    transform: translate(-50%, -50%); 
+    z-index: 3;
+  }
+  
+  .mon-texte {
+    padding:20px;
+    font-family: monospace;
+    color: #2F1539;
+  }
+  
+  .texte-score {
+    font-family: monospace;
+    color:rgb(225, 0, 255);
+    font-size: 30px;
+ }
+  
+  @keyframes blink {
+    0% {
+        opacity: 1;
+    }
+  
+    50% {
+        opacity: 0;
+    }
+  
+    100% {
+        opacity: 1;
+    }
+  }
+  
+  .blinking-text {
+    animation: blink 0.6s infinite;
+  }
+  
+  
+   .texte-couleur {
+    color:#CC7390;
+  } 
   
   .matrix-container {
     position: absolute;
@@ -11,9 +72,12 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
+    height: 200px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;  /* Change from center to flex-start */
+    /* vertically centers the text - il faut changer align-items */
+    padding-top: 70px;        /* Add some padding from the top */
     z-index: 2;
   }
   
@@ -23,7 +87,8 @@ body {
     background-size: cover;
     height: 100vh;
     width: 100%;
-    position: relative;
+    position: fixed;
+    z-index:1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,7 +96,7 @@ body {
   
   .matrix-text {
     color: rgb(225, 0, 255);
-    font-size: 80px;
+    font-size: 70px;
     font-family: monospace;
     position: relative;
     text-shadow: 0 0 10px rgb(225, 0, 255), 0 0 20px rgb(225, 0, 255), 0 0 30px rgb(225, 0, 255);
