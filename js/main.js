@@ -42,7 +42,7 @@ intro.appendChild(containerSuivant)
 let question1 = document.createElement("div")
 containerSuivant.appendChild(question1)
 question1.innerText=`1. Quelle est la planète la plus grande du système solaire ?`
-question1.style.marginBottom = "10px"
+question1.style.marginBottom = "30px"
 question1.style.display = "none"
 
 let btn1 = document.createElement("button")
@@ -110,7 +110,7 @@ btn3.addEventListener("click", ()=>{
 // question 2 + boutons
 let question2 = document.createElement("div")
 containerSuivant.appendChild(question2)
-question2.style.marginBottom = "10px"
+question2.style.marginBottom = "30px"
 question2.style.display= "none"
 question2.innerText=`2. Quelle est la durée d'une année sur Mercure en jours terrestres ?`
 
@@ -128,7 +128,10 @@ btn1q2.addEventListener("click", ()=>{
     btn1q2.remove()
     btn2q2.remove()
     btn3q2.remove()
-    // question3.style.display="block"
+    question3.style.display="block"
+    btn1q3.style.display="inline-block"
+    btn2q3.style.display="inline-block"
+    btn3q3.style.display="inline-block"
 })
 
 let btn2q2 = document.createElement("button")
@@ -143,7 +146,10 @@ btn2q2.addEventListener("click", ()=>{
     btn1q2.remove()
     btn2q2.remove()
     btn3q2.remove()
-    // question3.style.display="block"
+    question3.style.display="block"
+    btn1q3.style.display="inline-block"
+    btn2q3.style.display="inline-block"
+    btn3q3.style.display="inline-block"
 })
 
 let btn3q2 = document.createElement("button")
@@ -156,8 +162,64 @@ btn3q2.addEventListener("click", ()=>{
     question2.remove()
     btn1q2.remove()
     btn2q2.remove()
-    btn3q2.remove()
-    // question3.style.display="block"
+    btn3q3.remove()
+    question3.style.display="block"
+    btn1q3.style.display="inline-block"
+    btn2q3.style.display="inline-block"
+    btn3q3.style.display="inline-block"
+})
+
+//Question 3 + boutons
+let question3 = document.createElement("div")
+containerSuivant.appendChild(question3)
+question3.style.marginBottom = "30px"
+question3.style.display= "none"
+question3.innerText=`3. Quel est le nom de la galaxie où se trouve notre système solaire ?`
+
+let btn1q3 = document.createElement("button")
+btn1q3.textContent="88 jours"
+containerSuivant.appendChild(btn1q3)
+btn1q3.classList.add("monBouton")
+btn1q3.style.marginRight = "10px"
+btn1q3.style.display= "none"
+
+btn1q3.addEventListener("click", ()=>{
+    score += 1
+    updateScoreDisplay()
+    question3.remove()
+    btn1q3.remove()
+    btn2q3.remove()
+    btn3q3.remove()
+    // question4.style.display="block"
+})
+
+let btn2q3 = document.createElement("button")
+btn2q3.textContent="225 jours"
+containerSuivant.appendChild(btn2q3)
+btn2q3.classList.add("monBouton")
+btn2q3.style.marginRight ="10px"
+btn2q3.style.display= "none"
+
+btn2q3.addEventListener("click", ()=>{
+    question3.remove()
+    btn1q3.remove()
+    btn2q3.remove()
+    btn3q3.remove()
+    // question4.style.display="block"
+})
+
+let btn3q3 = document.createElement("button")
+btn3q3.textContent="365 jours"
+containerSuivant.appendChild(btn3q3)
+btn3q3.classList.add("monBouton")
+btn3q3.style.display= "none"
+
+btn3q3.addEventListener("click", ()=>{
+    question3.remove()
+    btn1q3.remove()
+    btn2q3.remove()
+    btn3q3.remove()
+    // question4.style.display="block"
 })
 
 // score > on le fait apparaitre initialement
