@@ -2,7 +2,9 @@ let score = 0
 let intro = document.querySelector(".mon-texte")
 let prenom = prompt("Bienvenue ! Quel est ton prénom ?")
 
-intro.innerText = `Bienvenue ${prenom}, te voilà dans ce quizz très facile sur l'astronomie.`
+let texteIntro = document.createElement("div")
+intro.appendChild(texteIntro)
+texteIntro.innerText = `Bienvenue ${prenom}, te voilà dans ce quizz très facile sur l'astronomie. Commençons !`
 
 let espace = document.createElement("div")
 intro.appendChild(espace)
@@ -10,7 +12,7 @@ espace.style.marginBottom = "20px"
 
 // espace contenant les questions et les boutons
 let containerSuivant = document.createElement("div")
-containerSuivant.style.marginTop = "20px"
+// containerSuivant.style.marginTop = "20px"
 intro.appendChild(containerSuivant)
 
 
@@ -28,6 +30,8 @@ btn1.classList.add("monBouton")
 btn1.style.marginRight = "10px"
 
 btn1.addEventListener("click", ()=>{
+    texteIntro.remove()
+    espace.remove()
     question1.remove()
     btn1.remove()
     btn2.remove()
