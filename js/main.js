@@ -19,6 +19,20 @@ let espace = document.createElement("div")
 intro.appendChild(espace)
 espace.style.marginBottom = "20px"
 
+let boutonStart = document.createElement("bouton")
+intro.appendChild(boutonStart)
+boutonStart.classList.add("monBouton2")
+boutonStart.textContent="Let's go !"
+boutonStart.addEventListener("click", ()=>{
+    texteIntro.remove()
+    espace.remove()
+    boutonStart.remove()
+    question1.style.display="block"
+    btn1.style.display="inline-block"
+    btn2.style.display="inline-block"
+    btn3.style.display="inline-block"
+})
+
 // espace contenant les questions et les boutons
 let containerSuivant = document.createElement("div")
 // containerSuivant.style.marginTop = "20px"
@@ -29,16 +43,18 @@ let question1 = document.createElement("div")
 containerSuivant.appendChild(question1)
 question1.innerText=`1. Quelle est la planète la plus grande du système solaire ?`
 question1.style.marginBottom = "10px"
+question1.style.display = "none"
 
 let btn1 = document.createElement("button")
 btn1.textContent="Mars"
 containerSuivant.appendChild(btn1)
 btn1.classList.add("monBouton")
 btn1.style.marginRight = "10px"
+btn1.style.display = "none"
 
 btn1.addEventListener("click", ()=>{
-    texteIntro.remove()
-    espace.remove()
+    // texteIntro.remove()
+    // espace.remove()
     question1.remove()
     btn1.remove()
     btn2.remove()
@@ -54,10 +70,11 @@ btn2.textContent="Jupiter"
 containerSuivant.appendChild(btn2)
 btn2.classList.add("monBouton")
 btn2.style.marginRight ="10px"
+btn2.style.display = "none"
 
 btn2.addEventListener("click", ()=>{
-    texteIntro.remove()
-    espace.remove()
+    // texteIntro.remove()
+    // espace.remove()
     question1.remove()
     btn1.remove()
     btn2.remove()
@@ -74,10 +91,11 @@ let btn3 = document.createElement("button")
 btn3.textContent="Saturne"
 containerSuivant.appendChild(btn3)
 btn3.classList.add("monBouton")
+btn3.style.display = "none"
 
 btn3.addEventListener("click", ()=>{
-    texteIntro.remove()
-    espace.remove()
+    // texteIntro.remove()
+    // espace.remove()
     question1.remove()
     btn1.remove()
     btn2.remove()

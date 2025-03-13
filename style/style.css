@@ -51,6 +51,28 @@ body {
     border-color: #854DA7;
   }
 
+  .monBouton2 {
+    width:120px;
+    height: 30px;
+    background-color: aliceblue;
+    font-family: monospace;
+    color:rgb(225, 0, 255);
+    border-style: outset;
+    border-color: #854DA7;
+    padding:10px;
+  }
+
+  .monBouton2:hover {
+    width:120px;
+    height: 30px;
+    background-color:#edced8;
+    font-family: monospace;
+    color:rgb(225, 0, 255);
+    border-style:outset;
+    border-color: #854DA7;
+    padding:10px;
+  }
+
   
   .mon-texte {
     padding:20px;
