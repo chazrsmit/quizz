@@ -321,7 +321,7 @@ btn1q5.addEventListener("click", ()=>{
     btn1q5.remove()
     btn2q5.remove()
     btn3q5.remove()
-    // question6.style.display="block"
+    question6.style.display="block"
 })
 
 //bouton 2 question 5
@@ -339,7 +339,7 @@ btn2q5.addEventListener("click", ()=>{
     btn1q5.remove()
     btn2q5.remove()
     btn3q5.remove()
-    // question6.style.display="block"
+    question6.style.display="block"
 })
 
 //bouton3 question 5
@@ -354,9 +354,65 @@ btn3q5.addEventListener("click", ()=>{
     btn1q5.remove()
     btn2q5.remove()
     btn3q5.remove()
-    // question6.style.display="block"
+    question6.style.display="block"
 })
 
+
+//Question 6
+let question6 = document.createElement("div")
+containerSuivant.appendChild(question6)
+question6.style.marginBottom = "30px"
+question6.style.display= "none"
+question6.innerText=`6. Quelle planète est surnommée la 'Planète rouge' ?`
+
+//bouton 1 question 6
+let btn1q6 = document.createElement("button")
+btn1q6.textContent="Mars"
+containerSuivant.appendChild(btn1q6)
+btn1q6.classList.add("monBouton")
+btn1q6.style.marginRight = "10px"
+btn1q6.style.display= "none"
+
+btn1q6.addEventListener("click", ()=>{
+    score += 1
+    updateScoreDisplay()
+    question6.remove()
+    btn1q6.remove()
+    btn2q6.remove()
+    btn3q6.remove()
+    // question7.style.display="block"
+})
+
+//bouton 2 question 6
+let btn2q6 = document.createElement("button")
+btn2q6.textContent="Dyoxide de carbone"
+containerSuivant.appendChild(btn2q6)
+btn2q6.classList.add("monBouton")
+btn2q6.style.marginRight ="10px"
+btn2q6.style.display= "none"
+
+btn2q6.addEventListener("click", ()=>{
+    question6.remove()
+    btn1q6.remove()
+    btn2q6.remove()
+    btn3q6.remove()
+    // question7.style.display="block"
+})
+
+//bouton3 question 6
+let btn3q6 = document.createElement("button")
+btn3q6.textContent="Azote"
+containerSuivant.appendChild(btn3q6)
+btn3q6.classList.add("monBouton")
+btn3q6.style.display= "none"
+
+btn3q6.addEventListener("click", ()=>{
+    question6.remove()
+    btn1q6.remove()
+    btn2q6.remove()
+    btn3q6.remove()
+    // question7.style.display="block"
+})
 
 
 // score > on le fait apparaitre initialement
