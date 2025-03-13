@@ -322,6 +322,9 @@ btn1q5.addEventListener("click", ()=>{
     btn2q5.remove()
     btn3q5.remove()
     question6.style.display="block"
+    btn1q6.style.display="inline-block"
+    btn2q6.style.display="inline-block"
+    btn3q6.style.display="inline-block"
 })
 
 //bouton 2 question 5
@@ -340,6 +343,10 @@ btn2q5.addEventListener("click", ()=>{
     btn2q5.remove()
     btn3q5.remove()
     question6.style.display="block"
+    btn1q6.style.display="inline-block"
+    btn2q6.style.display="inline-block"
+    btn3q6.style.display="inline-block"
+
 })
 
 //bouton3 question 5
@@ -355,6 +362,9 @@ btn3q5.addEventListener("click", ()=>{
     btn2q5.remove()
     btn3q5.remove()
     question6.style.display="block"
+    btn1q6.style.display="inline-block"
+    btn2q6.style.display="inline-block"
+    btn3q6.style.display="inline-block"
 })
 
 
@@ -385,7 +395,7 @@ btn1q6.addEventListener("click", ()=>{
 
 //bouton 2 question 6
 let btn2q6 = document.createElement("button")
-btn2q6.textContent="Dyoxide de carbone"
+btn2q6.textContent="Vénus"
 containerSuivant.appendChild(btn2q6)
 btn2q6.classList.add("monBouton")
 btn2q6.style.marginRight ="10px"
@@ -401,7 +411,7 @@ btn2q6.addEventListener("click", ()=>{
 
 //bouton3 question 6
 let btn3q6 = document.createElement("button")
-btn3q6.textContent="Azote"
+btn3q6.textContent="Mercure"
 containerSuivant.appendChild(btn3q6)
 btn3q6.classList.add("monBouton")
 btn3q6.style.display= "none"
