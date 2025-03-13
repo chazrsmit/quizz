@@ -17,7 +17,7 @@ texteIntro.innerText = `Bienvenue ${prenom}, te voilà dans ce quizz trèèèès
 
 let espace = document.createElement("div")
 intro.appendChild(espace)
-espace.style.marginBottom = "20px"
+espace.style.marginBottom = "30px"
 
 let boutonStart = document.createElement("bouton")
 intro.appendChild(boutonStart)
@@ -162,28 +162,45 @@ btn3q2.addEventListener("click", ()=>{
     question2.remove()
     btn1q2.remove()
     btn2q2.remove()
-    btn3q3.remove()
+    btn3q2.remove()
     question3.style.display="block"
     btn1q3.style.display="inline-block"
     btn2q3.style.display="inline-block"
     btn3q3.style.display="inline-block"
 })
 
-//Question 3 + boutons
+//Question 3
 let question3 = document.createElement("div")
 containerSuivant.appendChild(question3)
 question3.style.marginBottom = "30px"
 question3.style.display= "none"
 question3.innerText=`3. Quel est le nom de la galaxie où se trouve notre système solaire ?`
 
+//bouton 1 question 3
 let btn1q3 = document.createElement("button")
-btn1q3.textContent="88 jours"
+btn1q3.textContent="Andromède"
 containerSuivant.appendChild(btn1q3)
 btn1q3.classList.add("monBouton")
 btn1q3.style.marginRight = "10px"
 btn1q3.style.display= "none"
 
 btn1q3.addEventListener("click", ()=>{
+    question3.remove()
+    btn1q3.remove()
+    btn2q3.remove()
+    btn3q3.remove()
+    // question4.style.display="block"
+})
+
+//bouton 2 question 3
+let btn2q3 = document.createElement("button")
+btn2q3.textContent="Voie lactée"
+containerSuivant.appendChild(btn2q3)
+btn2q3.classList.add("monBouton")
+btn2q3.style.marginRight ="10px"
+btn2q3.style.display= "none"
+
+btn2q3.addEventListener("click", ()=>{
     score += 1
     updateScoreDisplay()
     question3.remove()
@@ -193,23 +210,9 @@ btn1q3.addEventListener("click", ()=>{
     // question4.style.display="block"
 })
 
-let btn2q3 = document.createElement("button")
-btn2q3.textContent="225 jours"
-containerSuivant.appendChild(btn2q3)
-btn2q3.classList.add("monBouton")
-btn2q3.style.marginRight ="10px"
-btn2q3.style.display= "none"
-
-btn2q3.addEventListener("click", ()=>{
-    question3.remove()
-    btn1q3.remove()
-    btn2q3.remove()
-    btn3q3.remove()
-    // question4.style.display="block"
-})
-
+//bouton3 question 3
 let btn3q3 = document.createElement("button")
-btn3q3.textContent="365 jours"
+btn3q3.textContent="Orion"
 containerSuivant.appendChild(btn3q3)
 btn3q3.classList.add("monBouton")
 btn3q3.style.display= "none"
