@@ -112,11 +112,6 @@ body {
     animation: blink 0.6s infinite;
   }
   
-  
-   .texte-couleur {
-    color:#CC7390;
-  } 
-  
   .matrix-container {
     position: absolute;
     top: 0;

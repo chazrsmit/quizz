@@ -255,7 +255,10 @@ btn1q4.addEventListener("click", ()=>{
     btn1q4.remove()
     btn2q4.remove()
     btn3q4.remove()
-    // question5.style.display="block"
+    question5.style.display="block"
+    btn1q5.style.display="inline-block"
+    btn2q5.style.display="inline-block"
+    btn3q5.style.display="inline-block"
 })
 
 //bouton 2 question 4
@@ -273,7 +276,10 @@ btn2q4.addEventListener("click", ()=>{
     btn1q4.remove()
     btn2q4.remove()
     btn3q4.remove()
-    // question5.style.display="block"
+    question5.style.display="block"
+    btn1q5.style.display="inline-block"
+    btn2q5.style.display="inline-block"
+    btn3q5.style.display="inline-block"
 })
 
 //bouton3 question 4
@@ -288,8 +294,69 @@ btn3q4.addEventListener("click", ()=>{
     btn1q4.remove()
     btn2q4.remove()
     btn3q4.remove()
-    // question5.style.display="block"
+    question5.style.display="block"
+    btn1q5.style.display="inline-block"
+    btn2q5.style.display="inline-block"
+    btn3q5.style.display="inline-block"
 })
+
+
+//Question 5
+let question5 = document.createElement("div")
+containerSuivant.appendChild(question5)
+question5.style.marginBottom = "30px"
+question5.style.display= "none"
+question5.innerText=`5. Quel est le principal gaz constituant l’atmosphère de Vénus ?`
+
+//bouton 1 question 5
+let btn1q5 = document.createElement("button")
+btn1q5.textContent="Oxygène"
+containerSuivant.appendChild(btn1q5)
+btn1q5.classList.add("monBouton")
+btn1q5.style.marginRight = "10px"
+btn1q5.style.display= "none"
+
+btn1q5.addEventListener("click", ()=>{
+    question5.remove()
+    btn1q5.remove()
+    btn2q5.remove()
+    btn3q5.remove()
+    // question6.style.display="block"
+})
+
+//bouton 2 question 5
+let btn2q5 = document.createElement("button")
+btn2q5.textContent="Dyoxide de carbone"
+containerSuivant.appendChild(btn2q5)
+btn2q5.classList.add("monBouton")
+btn2q5.style.marginRight ="10px"
+btn2q5.style.display= "none"
+
+btn2q5.addEventListener("click", ()=>{
+    score += 1
+    updateScoreDisplay()
+    question5.remove()
+    btn1q5.remove()
+    btn2q5.remove()
+    btn3q5.remove()
+    // question6.style.display="block"
+})
+
+//bouton3 question 5
+let btn3q5 = document.createElement("button")
+btn3q5.textContent="Azote"
+containerSuivant.appendChild(btn3q5)
+btn3q5.classList.add("monBouton")
+btn3q5.style.display= "none"
+
+btn3q5.addEventListener("click", ()=>{
+    question5.remove()
+    btn1q5.remove()
+    btn2q5.remove()
+    btn3q5.remove()
+    // question6.style.display="block"
+})
+
 
 
 // score > on le fait apparaitre initialement
