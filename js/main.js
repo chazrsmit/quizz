@@ -523,7 +523,10 @@ btn1q8.addEventListener("click", ()=>{
     btn1q8.remove()
     btn2q8.remove()
     btn3q8.remove()
-    // question9.style.display="block"
+    question9.style.display="block"
+    btn1q9.style.display="inline-block"
+    btn2q9.style.display="inline-block"
+    btn3q9.style.display="inline-block"
 })
 
 //bouton 2 question 8
@@ -541,7 +544,10 @@ btn2q8.addEventListener("click", ()=>{
     btn1q8.remove()
     btn2q8.remove()
     btn3q8.remove()
-    // question9.style.display="block"
+    question9.style.display="block"
+    btn1q9.style.display="inline-block"
+    btn2q9.style.display="inline-block"
+    btn3q9.style.display="inline-block"
 })
 
 //bouton3 question 8
@@ -556,9 +562,69 @@ btn3q8.addEventListener("click", ()=>{
     btn1q8.remove()
     btn2q8.remove()
     btn3q8.remove()
-    // question9.style.display="block"
+    question9.style.display="block"
+    btn1q9.style.display="inline-block"
+    btn2q9.style.display="inline-block"
+    btn3q9.style.display="inline-block"
 })
 
+//////////////////////////////////////////////////////////////////////////////////
+
+//Question 9
+let question9 = document.createElement("div")
+containerSuivant.appendChild(question9)
+question9.style.marginBottom = "30px"
+question9.style.display= "none"
+question9.innerText=`9. Quelle planète a un immense anticyclone appelé la 'Grande Tache Rouge' ?`
+
+//bouton 1 question 9
+let btn1q9 = document.createElement("button")
+btn1q9.textContent="Saturne"
+containerSuivant.appendChild(btn1q9)
+btn1q9.classList.add("monBouton")
+btn1q9.style.marginRight = "10px"
+btn1q9.style.display= "none"
+
+btn1q9.addEventListener("click", ()=>{
+    question9.remove()
+    btn1q9.remove()
+    btn2q9.remove()
+    btn3q9.remove()
+    // question10.style.display="block"
+})
+
+//bouton 2 question 9
+let btn2q9 = document.createElement("button")
+btn2q9.textContent="Uranus"
+containerSuivant.appendChild(btn2q9)
+btn2q9.classList.add("monBouton")
+btn2q9.style.marginRight ="10px"
+btn2q9.style.display= "none"
+
+btn2q9.addEventListener("click", ()=>{
+    question9.remove()
+    btn1q9.remove()
+    btn2q9.remove()
+    btn3q9.remove()
+    // question10.style.display="block"
+})
+
+//bouton3 question 9
+let btn3q9 = document.createElement("button")
+btn3q9.textContent="Jupiter"
+containerSuivant.appendChild(btn3q9)
+btn3q9.classList.add("monBouton")
+btn3q9.style.display= "none"
+
+btn3q8.addEventListener("click", ()=>{
+    score += 1
+    updateScoreDisplay()
+    question9.remove()
+    btn1q9.remove()
+    btn2q9.remove()
+    btn3q9.remove()
+    // question10.style.display="block"
+})
 
 
 //////////////////////////////////////////////////////////////////////////////////
