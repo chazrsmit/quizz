@@ -8,10 +8,10 @@ body {
   
   .my-container {
     width:600px;
-    height:300px;
+    height:260px;
     background-color: #854DA7;
     position: absolute; 
-    top:52%;
+    top:50%;
     left:50%;
     transform: translate(-50%, -50%); 
     box-sizing: border-box;
@@ -32,25 +32,27 @@ body {
   }
 
   .monBouton {
-    width:160px;
-    height: 50px;
+    width:165px;
+    height: 60px;
     background-color: aliceblue;
     font-family: monospace;
     color:rgb(225, 0, 255);
     border-style: outset;
     border-color: #854DA7;
-    font-size:18px;
+    font-size:14px;
+    padding:5px;
   }
 
   .monBouton:hover {
-    width:160px;
-    height: 50px;
+    width:165px;
+    height: 60px;
     background-color:#edced8;
     font-family: monospace;
     color:rgb(225, 0, 255);
     border-style:outset;
     border-color: #854DA7;
-    font-size:18px;
+    font-size:14px;
+    padding:5px;
   }
 
   .monBouton2 {

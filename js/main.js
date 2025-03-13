@@ -190,6 +190,9 @@ btn1q3.addEventListener("click", ()=>{
     btn2q3.remove()
     btn3q3.remove()
     question4.style.display="block"
+    btn1q4.style.display="inline-block"
+    btn2q4.style.display="inline-block"
+    btn3q4.style.display="inline-block"
 })
 
 //bouton 2 question 3
@@ -208,6 +211,9 @@ btn2q3.addEventListener("click", ()=>{
     btn2q3.remove()
     btn3q3.remove()
     question4.style.display="block"
+    btn1q4.style.display="inline-block"
+    btn2q4.style.display="inline-block"
+    btn3q4.style.display="inline-block"
 })
 
 //bouton3 question 3
@@ -223,6 +229,9 @@ btn3q3.addEventListener("click", ()=>{
     btn2q3.remove()
     btn3q3.remove()
     question4.style.display="block"
+    btn1q4.style.display="inline-block"
+    btn2q4.style.display="inline-block"
+    btn3q4.style.display="inline-block"
 })
 
 
