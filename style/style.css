@@ -30,6 +30,14 @@ body {
     transform: translate(-50%, -50%); 
     z-index: 3;
   }
+
+  .monBouton {
+    width:200px;
+    height: 60px;
+    background-color: #CC7390;
+    font-family: monospace;
+    color:aliceblue;
+  }
   
   .mon-texte {
     padding:20px;
