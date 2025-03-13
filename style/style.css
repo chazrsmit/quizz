@@ -32,12 +32,25 @@ body {
   }
 
   .monBouton {
-    width:200px;
-    height: 60px;
-    background-color: #CC7390;
+    width:120px;
+    height: 30px;
+    background-color: aliceblue;
     font-family: monospace;
-    color:aliceblue;
+    color:rgb(225, 0, 255);
+    border-style: inset;
+    border-color: #854DA7;
   }
+
+  .monBouton:hover {
+    width:120px;
+    height: 30px;
+    background-color:aquamarine;
+    font-family: monospace;
+    color:rgb(225, 0, 255);
+    border-style: inset;
+    border-color: #854DA7;
+  }
+
   
   .mon-texte {
     padding:20px;
