@@ -8,7 +8,7 @@ body {
   
   .my-container {
     width:600px;
-    height:400px;
+    height:300px;
     background-color: #854DA7;
     position: absolute; 
     top:52%;
@@ -25,7 +25,7 @@ body {
   
   .container-score {
     position: absolute; 
-    top:82%;
+    top:80%;
     left:50%;
     transform: translate(-50%, -50%); 
     z-index: 3;
