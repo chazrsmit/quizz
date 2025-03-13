@@ -425,6 +425,63 @@ btn3q6.addEventListener("click", ()=>{
 })
 
 
+//Question 7
+let question7 = document.createElement("div")
+containerSuivant.appendChild(question7)
+question7.style.marginBottom = "30px"
+question7.style.display= "none"
+question7.innerText=`7. Quel corps céleste a un cycle de phases visible depuis la Terre ?`
+
+//bouton 1 question 7
+let btn1q7 = document.createElement("button")
+btn1q7.textContent="Mars"
+containerSuivant.appendChild(btn1q7)
+btn1q7.classList.add("monBouton")
+btn1q7.style.marginRight = "10px"
+btn1q7.style.display= "none"
+
+btn1q7.addEventListener("click", ()=>{
+    score += 1
+    updateScoreDisplay()
+    question7.remove()
+    btn1q7.remove()
+    btn2q7.remove()
+    btn3q7.remove()
+    // question8.style.display="block"
+})
+
+//bouton 2 question 7
+let btn2q7 = document.createElement("button")
+btn2q7.textContent="Vénus"
+containerSuivant.appendChild(btn2q7)
+btn2q7.classList.add("monBouton")
+btn2q7.style.marginRight ="10px"
+btn2q7.style.display= "none"
+
+btn2q7.addEventListener("click", ()=>{
+    question7.remove()
+    btn1q7.remove()
+    btn2q7.remove()
+    btn3q7.remove()
+    // question8.style.display="block"
+})
+
+//bouton3 question 7
+let btn3q7 = document.createElement("button")
+btn3q7.textContent="Mercure"
+containerSuivant.appendChild(btn3q7)
+btn3q7.classList.add("monBouton")
+btn3q7.style.display= "none"
+
+btn3q7.addEventListener("click", ()=>{
+    question7.remove()
+    btn1q7.remove()
+    btn2q7.remove()
+    btn3q7.remove()
+    // question8.style.display="block"
+})
+
+
 // score > on le fait apparaitre initialement
 let scoreText = document.querySelector(".texte-score")
 scoreText.innerText = `Score = ${score}`
