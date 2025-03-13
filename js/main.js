@@ -38,6 +38,7 @@ let containerSuivant = document.createElement("div")
 // containerSuivant.style.marginTop = "20px"
 intro.appendChild(containerSuivant)
 
+//////////////////////////////////////////////////////////////////////////////////
 // Question 1 + boutons 
 let question1 = document.createElement("div")
 containerSuivant.appendChild(question1)
@@ -106,7 +107,7 @@ btn3.addEventListener("click", ()=>{
     btn3q2.style.display="inline-block"
 })
 
-
+//////////////////////////////////////////////////////////////////////////////////
 // question 2 + boutons
 let question2 = document.createElement("div")
 containerSuivant.appendChild(question2)
@@ -169,6 +170,7 @@ btn3q2.addEventListener("click", ()=>{
     btn3q3.style.display="inline-block"
 })
 
+//////////////////////////////////////////////////////////////////////////////////
 //Question 3
 let question3 = document.createElement("div")
 containerSuivant.appendChild(question3)
@@ -234,7 +236,7 @@ btn3q3.addEventListener("click", ()=>{
     btn3q4.style.display="inline-block"
 })
 
-
+//////////////////////////////////////////////////////////////////////////////////
 //Question 4
 let question4 = document.createElement("div")
 containerSuivant.appendChild(question4)
@@ -300,7 +302,7 @@ btn3q4.addEventListener("click", ()=>{
     btn3q5.style.display="inline-block"
 })
 
-
+//////////////////////////////////////////////////////////////////////////////////
 //Question 5
 let question5 = document.createElement("div")
 containerSuivant.appendChild(question5)
@@ -367,7 +369,7 @@ btn3q5.addEventListener("click", ()=>{
     btn3q6.style.display="inline-block"
 })
 
-
+//////////////////////////////////////////////////////////////////////////////////
 //Question 6
 let question6 = document.createElement("div")
 containerSuivant.appendChild(question6)
@@ -433,7 +435,7 @@ btn3q6.addEventListener("click", ()=>{
     btn3q7.style.display="inline-block"
 })
 
-
+//////////////////////////////////////////////////////////////////////////////////
 //Question 7
 let question7 = document.createElement("div")
 containerSuivant.appendChild(question7)
@@ -454,7 +456,10 @@ btn1q7.addEventListener("click", ()=>{
     btn1q7.remove()
     btn2q7.remove()
     btn3q7.remove()
-    // question8.style.display="block"
+    question8.style.display="block"
+    btn1q8.style.display="inline-block"
+    btn2q8.style.display="inline-block"
+    btn3q8.style.display="inline-block"
 })
 
 //bouton 2 question 7
@@ -472,7 +477,10 @@ btn2q7.addEventListener("click", ()=>{
     btn1q7.remove()
     btn2q7.remove()
     btn3q7.remove()
-    // question8.style.display="block"
+    question8.style.display="block"
+    btn1q8.style.display="inline-block"
+    btn2q8.style.display="inline-block"
+    btn3q8.style.display="inline-block"
 })
 
 //bouton3 question 7
@@ -487,10 +495,73 @@ btn3q7.addEventListener("click", ()=>{
     btn1q7.remove()
     btn2q7.remove()
     btn3q7.remove()
-    // question8.style.display="block"
+    question8.style.display="block"
+    btn1q8.style.display="inline-block"
+    btn2q8.style.display="inline-block"
+    btn3q8.style.display="inline-block"
+})
+
+//////////////////////////////////////////////////////////////////////////////////
+
+//Question 8
+let question8 = document.createElement("div")
+containerSuivant.appendChild(question8)
+question8.style.marginBottom = "30px"
+question8.style.display= "none"
+question8.innerText=`8. Comment s’appelle la plus grande lune de Saturne ?`
+
+//bouton 1 question 8
+let btn1q8 = document.createElement("button")
+btn1q8.textContent="Europe"
+containerSuivant.appendChild(btn1q8)
+btn1q8.classList.add("monBouton")
+btn1q8.style.marginRight = "10px"
+btn1q8.style.display= "none"
+
+btn1q8.addEventListener("click", ()=>{
+    question8.remove()
+    btn1q8.remove()
+    btn2q8.remove()
+    btn3q8.remove()
+    // question9.style.display="block"
+})
+
+//bouton 2 question 8
+let btn2q8 = document.createElement("button")
+btn2q8.textContent="Titan"
+containerSuivant.appendChild(btn2q8)
+btn2q8.classList.add("monBouton")
+btn2q8.style.marginRight ="10px"
+btn2q8.style.display= "none"
+
+btn2q8.addEventListener("click", ()=>{
+    score += 1
+    updateScoreDisplay()
+    question8.remove()
+    btn1q8.remove()
+    btn2q8.remove()
+    btn3q8.remove()
+    // question9.style.display="block"
+})
+
+//bouton3 question 8
+let btn3q8 = document.createElement("button")
+btn3q8.textContent="Ganymède"
+containerSuivant.appendChild(btn3q8)
+btn3q8.classList.add("monBouton")
+btn3q8.style.display= "none"
+
+btn3q8.addEventListener("click", ()=>{
+    question8.remove()
+    btn1q8.remove()
+    btn2q8.remove()
+    btn3q8.remove()
+    // question9.style.display="block"
 })
 
 
+
+//////////////////////////////////////////////////////////////////////////////////
 // score > on le fait apparaitre initialement
 let scoreText = document.querySelector(".texte-score")
 scoreText.innerText = `Score = ${score}`
