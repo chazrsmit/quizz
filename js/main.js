@@ -3,9 +3,9 @@ let score = 0
 //update à chaque fois le score, car sans la fonction ça ne marche pas - à chaque bonne réponse, la fonction est appelée et updatée ;
 //sinon update à chaque fois qu'on clique sur le bouton : scoreText.innerText = `Score = ${score}`
 function updateScoreDisplay() {
-    // let scoreText = document.querySelector(".texte-score")
-    scoreText.innerText = `Score = ${score}`
-    // scoreText.style.display = "block" // Make sure it's visible
+
+scoreText.innerText = `Score = ${score}`
+
 }
 
 let intro = document.querySelector(".mon-texte")
@@ -37,6 +37,9 @@ boutonStart.addEventListener("click", ()=>{
 let containerSuivant = document.createElement("div")
 // containerSuivant.style.marginTop = "20px"
 intro.appendChild(containerSuivant)
+
+let finalScoreText = document.createElement("div")
+containerSuivant.appendChild(finalScoreText)
 
 //////////////////////////////////////////////////////////////////////////////////
 // Question 1 + boutons 
@@ -660,6 +663,8 @@ btn1q10.addEventListener("click", ()=>{
     btn1q10.remove()
     btn2q10.remove()
     btn3q10.remove()
+    finalScoreText.innerText = `Vous avez obtenu un score de ${score} sur 10.`
+    finalScoreText.style.display = "block"
 })
 
 //bouton 2 question 10
@@ -675,6 +680,8 @@ btn2q10.addEventListener("click", ()=>{
     btn1q10.remove()
     btn2q10.remove()
     btn3q10.remove()
+    finalScoreText.innerText = `Vous avez obtenu un score de ${score} sur 10.`
+    finalScoreText.style.display = "block"
 })
 
 //bouton3 question 10
@@ -684,13 +691,15 @@ containerSuivant.appendChild(btn3q10)
 btn3q10.classList.add("monBouton")
 btn3q10.style.display= "none"
 
-btn3q9.addEventListener("click", ()=>{
+btn3q10.addEventListener("click", ()=>{
     question10.remove()
     btn1q10.remove()
     btn2q10.remove()
     btn3q10.remove()
-})
+    finalScoreText.innerText = `Vous avez obtenu un score de ${score} sur 10.`
+    finalScoreText.style.display = "block"
 
+})
 
 //////////////////////////////////////////////////////////////////////////////////
 // score > on le fait apparaitre initialement
