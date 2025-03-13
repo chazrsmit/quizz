@@ -590,7 +590,11 @@ btn1q9.addEventListener("click", ()=>{
     btn1q9.remove()
     btn2q9.remove()
     btn3q9.remove()
-    // question10.style.display="block"
+    question10.style.display="block"
+    btn1q10.style.display="inline-block"
+    btn2q10.style.display="inline-block"
+    btn3q10.style.display="inline-block"
+    
 })
 
 //bouton 2 question 9
@@ -606,7 +610,10 @@ btn2q9.addEventListener("click", ()=>{
     btn1q9.remove()
     btn2q9.remove()
     btn3q9.remove()
-    // question10.style.display="block"
+    question10.style.display="block"
+    btn1q10.style.display="inline-block"
+    btn2q10.style.display="inline-block"
+    btn3q10.style.display="inline-block"
 })
 
 //bouton3 question 9
@@ -616,14 +623,72 @@ containerSuivant.appendChild(btn3q9)
 btn3q9.classList.add("monBouton")
 btn3q9.style.display= "none"
 
-btn3q8.addEventListener("click", ()=>{
+btn3q9.addEventListener("click", ()=>{
     score += 1
     updateScoreDisplay()
     question9.remove()
     btn1q9.remove()
     btn2q9.remove()
     btn3q9.remove()
-    // question10.style.display="block"
+    question10.style.display="block"
+    btn1q10.style.display="inline-block"
+    btn2q10.style.display="inline-block"
+    btn3q10.style.display="inline-block"
+})
+
+//////////////////////////////////////////////////////////////////////////////////
+
+//Question 10
+let question10 = document.createElement("div")
+containerSuivant.appendChild(question10)
+question10.style.marginBottom = "30px"
+question10.style.display= "none"
+question10.innerText=`10. Comment s’appelle le télescope spatial lancé en 1990 qui a révolutionné l’astronomie ?`
+
+//bouton 1 question 10
+let btn1q10 = document.createElement("button")
+btn1q10.textContent="Hubble"
+containerSuivant.appendChild(btn1q10)
+btn1q10.classList.add("monBouton")
+btn1q10.style.marginRight = "10px"
+btn1q10.style.display= "none"
+
+btn1q10.addEventListener("click", ()=>{
+    score += 1
+    updateScoreDisplay()
+    question10.remove()
+    btn1q10.remove()
+    btn2q10.remove()
+    btn3q10.remove()
+})
+
+//bouton 2 question 10
+let btn2q10 = document.createElement("button")
+btn2q10.textContent="Kepler"
+containerSuivant.appendChild(btn2q10)
+btn2q10.classList.add("monBouton")
+btn2q10.style.marginRight ="10px"
+btn2q10.style.display= "none"
+
+btn2q10.addEventListener("click", ()=>{
+    question10.remove()
+    btn1q10.remove()
+    btn2q10.remove()
+    btn3q10.remove()
+})
+
+//bouton3 question 10
+let btn3q10 = document.createElement("button")
+btn3q10.textContent="James Webb"
+containerSuivant.appendChild(btn3q10)
+btn3q10.classList.add("monBouton")
+btn3q10.style.display= "none"
+
+btn3q9.addEventListener("click", ()=>{
+    question10.remove()
+    btn1q10.remove()
+    btn2q10.remove()
+    btn3q10.remove()
 })
 
 
