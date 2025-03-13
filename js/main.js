@@ -13,7 +13,7 @@ let prenom = prompt("Bienvenue ! Quel est ton prénom ?")
 
 let texteIntro = document.createElement("div")
 intro.appendChild(texteIntro)
-texteIntro.innerText = `Bienvenue ${prenom}, te voilà dans ce quizz très facile sur l'astronomie. Commençons !`
+texteIntro.innerText = `Bienvenue ${prenom}, te voilà dans ce quizz trèèèès facile sur l'astronomie. Commençons...`
 
 let espace = document.createElement("div")
 intro.appendChild(espace)
