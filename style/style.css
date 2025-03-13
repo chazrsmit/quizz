@@ -92,6 +92,7 @@ body {
     font-family: monospace;
     color:rgb(225, 0, 255);
     font-size: 30px;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
  }
   
   @keyframes blink {
