@@ -1,9 +1,11 @@
 let score = 0
 
+//update à chaque fois le score, car sans la fonction ça ne marche pas - à chaque bonne réponse, la fonction est appelée et updatée ;
+//sinon update à chaque fois qu'on clique sur le bouton : scoreText.innerText = `Score = ${score}`
 function updateScoreDisplay() {
-    let scoreText = document.querySelector(".texte-score")
+    // let scoreText = document.querySelector(".texte-score")
     scoreText.innerText = `Score = ${score}`
-    scoreText.style.display = "block" // Make sure it's visible
+    // scoreText.style.display = "block" // Make sure it's visible
 }
 
 let intro = document.querySelector(".mon-texte")
@@ -140,6 +142,6 @@ btn3q2.addEventListener("click", ()=>{
     // question3.style.display="block"
 })
 
-// score
+// score > on le fait apparaitre initialement
 let scoreText = document.querySelector(".texte-score")
 scoreText.innerText = `Score = ${score}`
