@@ -37,17 +37,17 @@ body {
     background-color: aliceblue;
     font-family: monospace;
     color:rgb(225, 0, 255);
-    border-style: inset;
+    border-style: outset;
     border-color: #854DA7;
   }
 
   .monBouton:hover {
     width:120px;
     height: 30px;
-    background-color:aquamarine;
+    background-color:#edced8;
     font-family: monospace;
     color:rgb(225, 0, 255);
-    border-style: inset;
+    border-style:outset;
     border-color: #854DA7;
   }
 
