@@ -390,7 +390,10 @@ btn1q6.addEventListener("click", ()=>{
     btn1q6.remove()
     btn2q6.remove()
     btn3q6.remove()
-    // question7.style.display="block"
+    question7.style.display="block"
+    btn1q7.style.display="inline-block"
+    btn2q7.style.display="inline-block"
+    btn3q7.style.display="inline-block"
 })
 
 //bouton 2 question 6
@@ -406,7 +409,10 @@ btn2q6.addEventListener("click", ()=>{
     btn1q6.remove()
     btn2q6.remove()
     btn3q6.remove()
-    // question7.style.display="block"
+    question7.style.display="block"
+    btn1q7.style.display="inline-block"
+    btn2q7.style.display="inline-block"
+    btn3q7.style.display="inline-block"
 })
 
 //bouton3 question 6
@@ -421,7 +427,10 @@ btn3q6.addEventListener("click", ()=>{
     btn1q6.remove()
     btn2q6.remove()
     btn3q6.remove()
-    // question7.style.display="block"
+    question7.style.display="block"
+    btn1q7.style.display="inline-block"
+    btn2q7.style.display="inline-block"
+    btn3q7.style.display="inline-block"
 })
 
 
@@ -434,15 +443,13 @@ question7.innerText=`7. Quel corps céleste a un cycle de phases visible depuis 
 
 //bouton 1 question 7
 let btn1q7 = document.createElement("button")
-btn1q7.textContent="Mars"
+btn1q7.textContent="Le soleil"
 containerSuivant.appendChild(btn1q7)
 btn1q7.classList.add("monBouton")
 btn1q7.style.marginRight = "10px"
 btn1q7.style.display= "none"
 
 btn1q7.addEventListener("click", ()=>{
-    score += 1
-    updateScoreDisplay()
     question7.remove()
     btn1q7.remove()
     btn2q7.remove()
@@ -452,13 +459,15 @@ btn1q7.addEventListener("click", ()=>{
 
 //bouton 2 question 7
 let btn2q7 = document.createElement("button")
-btn2q7.textContent="Vénus"
+btn2q7.textContent="La Lune"
 containerSuivant.appendChild(btn2q7)
 btn2q7.classList.add("monBouton")
 btn2q7.style.marginRight ="10px"
 btn2q7.style.display= "none"
 
 btn2q7.addEventListener("click", ()=>{
+    score += 1
+    updateScoreDisplay()
     question7.remove()
     btn1q7.remove()
     btn2q7.remove()
@@ -468,7 +477,7 @@ btn2q7.addEventListener("click", ()=>{
 
 //bouton3 question 7
 let btn3q7 = document.createElement("button")
-btn3q7.textContent="Mercure"
+btn3q7.textContent="Jupiter"
 containerSuivant.appendChild(btn3q7)
 btn3q7.classList.add("monBouton")
 btn3q7.style.display= "none"
