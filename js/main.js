@@ -696,7 +696,7 @@ btn3q10.addEventListener("click", ()=>{
     btn1q10.remove()
     btn2q10.remove()
     btn3q10.remove()
-    finalScoreText.innerText = `Vous avez obtenu un score de ${score} sur 10.`
+    finalScoreText.innerText = `Vous avez obtenu un score de ${score} sur 10. On se retrouve une prochaine fois ${prenom} !`
     finalScoreText.style.display = "block"
 
 })
