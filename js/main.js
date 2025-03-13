@@ -17,7 +17,7 @@ texteIntro.innerText = `Bienvenue ${prenom}, te voilà dans ce quizz trèèèès
 
 let espace = document.createElement("div")
 intro.appendChild(espace)
-espace.style.marginBottom = "30px"
+espace.style.marginBottom = "40px"
 
 let boutonStart = document.createElement("bouton")
 intro.appendChild(boutonStart)

@@ -21,15 +21,18 @@ body {
     border-style: ridge;
     border-color: #2F1539;
     border-width: 20px;
+    display:flex;
   }
   
   .container-score {
     position: absolute; 
-    top:80%;
+    top:75%;
     left:50%;
     transform: translate(-50%, -50%); 
     z-index: 3;
+    display:flex;
   }
+
 
   .monBouton {
     width:165px;
@@ -56,8 +59,8 @@ body {
   }
 
   .monBouton2 {
-    width:120px;
-    height: 30px;
+    width:180px;
+    height: 40px;
     background-color: aliceblue;
     font-family: monospace;
     color:rgb(225, 0, 255);
@@ -125,7 +128,7 @@ body {
     justify-content: center;
     align-items: flex-start;  /* Change from center to flex-start */
     /* vertically centers the text - il faut changer align-items */
-    padding-top: 70px;        /* Add some padding from the top */
+    padding-top: 90px;        /* Add some padding from the top */
     z-index: 2;
   }
   
