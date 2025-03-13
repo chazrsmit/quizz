@@ -189,7 +189,7 @@ btn1q3.addEventListener("click", ()=>{
     btn1q3.remove()
     btn2q3.remove()
     btn3q3.remove()
-    // question4.style.display="block"
+    question4.style.display="block"
 })
 
 //bouton 2 question 3
@@ -207,7 +207,7 @@ btn2q3.addEventListener("click", ()=>{
     btn1q3.remove()
     btn2q3.remove()
     btn3q3.remove()
-    // question4.style.display="block"
+    question4.style.display="block"
 })
 
 //bouton3 question 3
@@ -222,8 +222,66 @@ btn3q3.addEventListener("click", ()=>{
     btn1q3.remove()
     btn2q3.remove()
     btn3q3.remove()
-    // question4.style.display="block"
+    question4.style.display="block"
 })
+
+
+//Question 4
+let question4 = document.createElement("div")
+containerSuivant.appendChild(question4)
+question4.style.marginBottom = "30px"
+question4.style.display= "none"
+question4.innerText=`4. Quelle étoile est la plus proche de la Terre après le Soleil ?`
+
+//bouton 1 question 4
+let btn1q4 = document.createElement("button")
+btn1q4.textContent="Sirius"
+containerSuivant.appendChild(btn1q4)
+btn1q4.classList.add("monBouton")
+btn1q4.style.marginRight = "10px"
+btn1q4.style.display= "none"
+
+btn1q4.addEventListener("click", ()=>{
+    question4.remove()
+    btn1q4.remove()
+    btn2q4.remove()
+    btn3q4.remove()
+    // question5.style.display="block"
+})
+
+//bouton 2 question 4
+let btn2q4 = document.createElement("button")
+btn2q4.textContent="Proxima du Centaure"
+containerSuivant.appendChild(btn2q4)
+btn2q4.classList.add("monBouton")
+btn2q4.style.marginRight ="10px"
+btn2q4.style.display= "none"
+
+btn2q4.addEventListener("click", ()=>{
+    score += 1
+    updateScoreDisplay()
+    question4.remove()
+    btn1q4.remove()
+    btn2q4.remove()
+    btn3q4.remove()
+    // question5.style.display="block"
+})
+
+//bouton3 question 4
+let btn3q4 = document.createElement("button")
+btn3q4.textContent="Véga"
+containerSuivant.appendChild(btn3q4)
+btn3q4.classList.add("monBouton")
+btn3q4.style.display= "none"
+
+btn3q4.addEventListener("click", ()=>{
+    question4.remove()
+    btn1q4.remove()
+    btn2q4.remove()
+    btn3q4.remove()
+    // question5.style.display="block"
+})
+
 
 // score > on le fait apparaitre initialement
 let scoreText = document.querySelector(".texte-score")
