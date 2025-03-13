@@ -1,4 +1,11 @@
 let score = 0
+
+function updateScoreDisplay() {
+    let scoreText = document.querySelector(".texte-score")
+    scoreText.innerText = `Score = ${score}`
+    scoreText.style.display = "block" // Make sure it's visible
+}
+
 let intro = document.querySelector(".mon-texte")
 let prenom = prompt("Bienvenue ! Quel est ton prénom ?")
 
@@ -15,13 +22,11 @@ let containerSuivant = document.createElement("div")
 // containerSuivant.style.marginTop = "20px"
 intro.appendChild(containerSuivant)
 
-
 // Question 1 + boutons 
 let question1 = document.createElement("div")
 containerSuivant.appendChild(question1)
 question1.innerText=`1. Quelle est la planète la plus grande du système solaire ?`
 question1.style.marginBottom = "10px"
-
 
 let btn1 = document.createElement("button")
 btn1.textContent="Mars"
@@ -49,15 +54,18 @@ btn2.classList.add("monBouton")
 btn2.style.marginRight ="10px"
 
 btn2.addEventListener("click", ()=>{
+    texteIntro.remove()
+    espace.remove()
     question1.remove()
     btn1.remove()
     btn2.remove()
     btn3.remove()
     score += 1
+    updateScoreDisplay()
     question2.style.display="block"
-    btn1q2.style.display="block"
-    btn2q2.style.display="block"
-    btn3q2.style.display="block"
+    btn1q2.style.display="inline-block"
+    btn2q2.style.display="inline-block"
+    btn3q2.style.display="inline-block"
 })
 
 let btn3 = document.createElement("button")
@@ -66,14 +74,16 @@ containerSuivant.appendChild(btn3)
 btn3.classList.add("monBouton")
 
 btn3.addEventListener("click", ()=>{
+    texteIntro.remove()
+    espace.remove()
     question1.remove()
     btn1.remove()
     btn2.remove()
     btn3.remove()
     question2.style.display="block"
-    btn1q2.style.display="block"
-    btn2q2.style.display="block"
-    btn3q2.style.display="block"
+    btn1q2.style.display="inline-block"
+    btn2q2.style.display="inline-block"
+    btn3q2.style.display="inline-block"
 })
 
 
@@ -93,6 +103,7 @@ btn1q2.style.display= "none"
 
 btn1q2.addEventListener("click", ()=>{
     score += 1
+    updateScoreDisplay()
     question2.remove()
     btn1q2.remove()
     btn2q2.remove()
@@ -129,6 +140,6 @@ btn3q2.addEventListener("click", ()=>{
     // question3.style.display="block"
 })
 
-
-
-
+// score
+let scoreText = document.querySelector(".texte-score")
+scoreText.innerText = `Score = ${score}`
