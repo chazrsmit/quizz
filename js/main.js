@@ -81,47 +81,47 @@ question2.style.display= "none"
 question2.innerText=`2. Quelle est la durée d'une année sur Mercure en jours terrestres ?`
 
 let btn1q2 = document.createElement("button")
-btn1q2.textContent="Mars"
+btn1q2.textContent="88 jours"
 containerSuivant.appendChild(btn1q2)
 btn1q2.classList.add("monBouton")
 btn1q2.style.marginRight = "10px"
 btn1q2.style.display= "none"
 
 btn1q2.addEventListener("click", ()=>{
-    // question2.remove()
-    // btn1q2.remove()
-    // btn2q2.remove()
-    // btn3q2.remove()
+    score += 1
+    question2.remove()
+    btn1q2.remove()
+    btn2q2.remove()
+    btn3q2.remove()
     // question3.style.display="block"
 })
 
 let btn2q2 = document.createElement("button")
-btn2q2.textContent="Jupiter"
+btn2q2.textContent="225 jours"
 containerSuivant.appendChild(btn2q2)
 btn2q2.classList.add("monBouton")
 btn2q2.style.marginRight ="10px"
 btn2q2.style.display= "none"
 
 btn2q2.addEventListener("click", ()=>{
-    // question2.remove()
-    // btn1q2.remove()
-    // btn2q2.remove()
-    // btn3q2.remove()
-    // score += 1
+    question2.remove()
+    btn1q2.remove()
+    btn2q2.remove()
+    btn3q2.remove()
     // question3.style.display="block"
 })
 
 let btn3q2 = document.createElement("button")
-btn3q2.textContent="Saturne"
+btn3q2.textContent="365 jours"
 containerSuivant.appendChild(btn3q2)
 btn3q2.classList.add("monBouton")
 btn3q2.style.display= "none"
 
 btn3q2.addEventListener("click", ()=>{
-    // question2.remove()
-    // btn1q2.remove()
-    // btn2q2.remove()
-    // btn3q2.remove()
+    question2.remove()
+    btn1q2.remove()
+    btn2q2.remove()
+    btn3q2.remove()
     // question3.style.display="block"
 })
 
